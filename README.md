@@ -1,2 +1,2 @@
-# ishiki-web
-gae we app for ishiki
+# ishiki web
+A GAE app to support ishiki

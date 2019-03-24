@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="row">
+    <!-- Item -->
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="heading-title">welcome to ishiki</h4>
+
+            </div>
+            <div class="card-block">
+                <p class="info-block">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper libero urna, in convallis nulla accumsan quis. Nam at nunc eu est accumsan lobortis. Morbi egestas mauris mauris, eu accumsan neque pulvinar eleifend. Aenean hendrerit, est vitae tristique rutrum, ex orci faucibus orci, eget consectetur velit velit nec quam. Nunc porta, ante ut porttitor dictum, urna libero commodo ipsum, sit amet sodales felis neque id lectus. Morbi a nisi scelerisque, ornare nulla non, scelerisque nunc. Nunc in lorem urna. Sed est dolor, luctus id leo vitae, pretium convallis tortor. </p>
+           </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="heading-title">bookings</h4>
+                <div class="heading-anchor">
+
+                        <span class="oi oi-pencil" title="icon name" aria-hidden="true"></span>
+
+                </div>
+            </div>
+            <div class="card-block">
+                <p class="info-block">
+                    <img class="service_icon" src="{{ url_for('static', filename='images/portainer.png') }}" />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper libero urna, in convallis nulla accumsan quis.
+                </p>
+                <a class="btn btn-primary wide-button" href="http://35.205.94.204:9000">make a booking</a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="heading-title">admin</h4>
+                <div class="heading-anchor">
+
+                        <span class="oi oi-cog" title="icon name" aria-hidden="true"></span>
+
+                </div>
+            </div>
+            <div class="card-block">
+                <p class="info-block">
+                    <img class="service_icon" src="{{ url_for('static', filename='images/portainer.png') }}" />
+                    Remotely administer the software running on the ishiki desks using Portainer.
+                </p>
+                <a class="btn btn-primary wide-button" href="http://35.205.94.204">administer the desks</a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <h4 class="heading-title">data streams</h4>
+                <div class="heading-anchor">
+                    <span class="oi oi-graph" title="icon name" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="card-block">
+                <p class="info-block">
+                    <img class="service_icon" src="{{ url_for('static', filename='images/grafana.jpg') }}" />
+                    Browse data from the ishiki desks using Grafana.
+                </p>
+                <a class="btn btn-primary wide-button" href="http://34.76.197.148">view the data streams</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+{% endblock %}
